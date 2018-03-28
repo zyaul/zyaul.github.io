@@ -85,6 +85,7 @@ input[type="submit"],a{
 .w3_agile_main_grids{
 	width:55%;
 	margin:0 auto;
+	max-width:850px
 }
 .agile_main_grid_left{
 	float:left;
