@@ -19,16 +19,23 @@
 
 
     <script src="jquery.js"></script>
-    <script src="logger.js">
-       $(document).on("mousemove", ".banner", function (e) {
-                var positionX = e.clientX;
-                var positionY = e.clientY;
-                positionX = Math.round(positionX / 10) - 80;
-                positionY = Math.round(positionY / 10) - 40;
-                $(this).find('.banner-text').css({'transform': 'translate(' + positionX + 'px,' + positionY + 'px)', 'transition-duration': '0s'});
+    <script>
+        $(document).on("mousemove", ".banner", function (e) {
+            var positionX = e.clientX;
+            var positionY = e.clientY;
+            positionX = Math.round(positionX / 10) - 80;
+            positionY = Math.round(positionY / 10) - 40;
+            $(this).find('.banner-text').css({
+                'transform': 'translate(' + positionX + 'px,' + positionY + 'px)',
+                'transition-duration': '0s'
             });
- $(document).on("mouseout", ".banner", function (e) { $('.banner-text').css({'transform': 'translate(0,0)',
-'transition-duration': '0.5s'}); });
+        });
+        $(document).on("mouseout", ".banner", function (e) {
+            $('.banner-text').css({
+                'transform': 'translate(0,0)',
+                'transition-duration': '0.5s'
+            });
+        });
     </script>
 
 </body>
